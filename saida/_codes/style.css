@@ -1,0 +1,1073 @@
+@charset "UTF-8";
+
+/* - - - - - - - - - - Animações - - - - - - - - - - */
+
+@keyframes wow {
+    0% {
+        transform: scale(5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.wow {
+    -webkit-animation: wow 0.5s ease 1 alternate;
+    -moz-animation: wow 0.5s ease 1 alternate;
+    -o-animation: wow 0.5s ease 1 alternate;
+    animation: wow 0.5s ease 1 alternate;
+}
+
+@keyframes enterRightBounce {
+    0% {
+        transform: translateX(220px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    70% {
+        transform: translateX(8px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.bounce_direita {
+    opacity: 1 !important;
+    visibility: visible !important;
+    -webkit-animation: enterRightBounce 1s linear;
+    -moz-animation: enterRightBounce 1s linear;
+    -o-animation: enterRightBounce 1s linear;
+    animation: enterRightBounce 1s linear;
+}
+
+/* - - - - - - - - - - Fontes - - - - - - - - - - */
+
+@font-face {
+    font-family: "Logica";
+    src: url(../../_fontes/Logica.ttf) format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Aleo";
+    src: url(../../_fontes/aleo/Aleo_font_v1.2.2/Webfont%20Kit/Bold/aleo-bold-webfont.ttf) format("truetype"),
+    url("../../_fontes/aleo/Aleo_font_v1.2.2/Webfont%20Kit/Bold/aleo-bold-webfont.eot") format("eot"),
+    url("../../_fontes/aleo/Aleo_font_v1.2.2/Webfont%20Kit/Bold/aleo-bold-webfont.woff") format("woff"),
+    url("../../_fontes/aleo/Aleo_font_v1.2.2/Webfont%20Kit/Bold/aleo-bold-webfont.svg") format("svg");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url(../../_fontes/bitter-ht-regular-italic-bold-bold-italic/Bitter-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url(../../_fontes/bitter-ht-regular-italic-bold-bold-italic/Bitter-Regular.otf);
+    font-style: normal;
+}
+
+@font-face { /* Por enquanto a melhor */
+    font-family: "Prime";
+    src: url(../../_fontes/prime/Prime%20Regular.otf);
+}
+
+@font-face { /* Converter tudo a MAIUSCULO */
+    font-family: "Voyager";
+    src: url(../../_fontes/Voyager-Grotesque/V-GERB_bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Prototype";
+    src: url(../../_fontes/prototype/Prototype.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    /* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+    font-family:"Blogger Sans Medium";
+    src:url("../../_fontes/blogger_sans_medium/BloggerSans-Medium.eot?") format("eot"),
+    url("../../_fontes/blogger_sans_medium/BloggerSans-Medium.woff") format("woff"),
+    url("../../_fontes/blogger_sans_medium/BloggerSans-Medium.ttf") format("truetype"),
+    url("../../_fontes/blogger_sans_medium/BloggerSans-Medium.svg#BloggerSans-Medium") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'Electr';
+    src: url(../../_fontes/electr.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Electr';
+    font-style: italic;
+    src: url(../../_fontes/electri.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto-Regular"), url(../../_fontes/Roboto-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto-Bold"), url(../../_fontes/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+/* - - - - - - - - - - MENU - - - - - - - - - - */
+
+nav {
+    z-index: 9910;
+    background: rgba(0, 2, 3, .9);
+    border-bottom: 1px rgba(255,255,255,.9) solid;
+    box-shadow: 0 1px 5px rgba(52,56,56,.5);
+    display: block;
+    /*font-family: Electr, sans-serif;*/
+    font-family: Prime, sans-serif;
+    font-size: 14pt;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+nav li a {
+    color: rgba(250, 250, 250, 1);
+    text-shadow: 0 0 15px rgba(0,0,0,.7);
+    text-decoration: none;
+}
+
+nav li a#tit {
+    font-family: Electr, sans-serif;
+    font-size: 20pt;
+    color: rgba(0, 252, 23, .7);
+    background: rgba(255,255,255,.0);
+}
+
+nav li a:hover {
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+    color: rgba(255, 255, 255, .7);
+    text-shadow: 0 0 25px rgba(0,0,0,.5);
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 -2px;
+    padding: 13px 17px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+    color: rgba(0, 200, 23, .7);
+    background: rgb(205, 205, 205);
+    text-shadow: 0 0 25px rgba(0,0,0,.5);
+
+}
+
+audio{
+    background: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.1);
+    width: 100%;
+}
+
+nav li ul.menu-sec {
+    position: absolute;
+    top: -777px;
+    margin-left: -130px;
+    z-index: 9905;
+}
+
+nav li ul.menu-sec#ms1 {
+    border: 1px rgba(255,255,255,.9) solid;
+    padding: 0;
+    width: 400px;
+}
+
+nav ul.menu-sec li{
+    background: rgba(0, 252, 23, .9);
+    padding: 10px;
+    margin: 0;
+    transition: all .5s;
+    z-index: 9999;
+}
+
+nav ul.menu-sec#ms1 li{
+    display: block;
+}
+
+nav ul.menu-sec li:hover {
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+    border: 1px rgba(0, 200, 23, .9) solid;
+    color: rgba(0, 200, 23, .7);
+    background: rgb(255,255,255);
+    text-shadow: 0 0 25px rgba(0,0,0,.5);
+}
+
+li:hover > ul.menu-sec {
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+    top: 49px;
+}
+
+/* - - - - - - - - - - MENU LATERAL - - - - - - - - - - */
+
+nav#menu-lat {
+    display: none;
+}
+
+nav#menu-lat ul li {
+    padding: 10px 14px;
+}
+
+nav li ul.menu-sec2 {
+    position: absolute;
+    top: 60px;
+    left: -2610px;
+    z-index: 9905;
+}
+
+nav li ul.menu-sec2#ms1 {
+    border: 1px rgba(255,255,255,.9) solid;
+    padding: 0;
+    width: 400px;
+}
+
+nav ul.menu-sec2 li{
+    background: rgba(0, 23, 0, .9);
+    padding: 10px;
+    margin: 0;
+    transition: all .5s;
+    z-index: 9999;
+}
+
+nav ul.menu-sec2 li:hover {
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+    border: 1px rgba(0,200,255,.9) solid;
+    color: rgba(0,200,255,.7);
+    background: rgb(255,255,255);
+    text-shadow: 0 0 25px rgba(0,0,0,.5);
+}
+
+li:hover > ul.menu-sec2 {
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+    left: 261px;
+}
+
+/* - - - - - - - - - - FIM MENU'S - - - - - - - - - - */
+
+body {
+    background: url("../../_imagens/Eduarda_Larissa/_/a14.jpg") #ffffff  no-repeat fixed;
+    /* background: #ffffff url("../_imagens/Parede/511a4.jpg") no-repeat fixed; */
+    background-size: cover;
+    font-family: "Bitter", "Roboto", sans-serif;;
+    z-index: 9000;
+}
+
+span.logic {
+    font-family: Logica, sans-serif;
+}
+
+span.prime {
+    font-family: Prime, sans-serif;
+}
+
+div#interface {
+    background: rgba(0,0,0,.8);
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+    padding: 20px;
+    border: 3px rgba(255,255,255,.8) solid;
+    z-index: 9100;
+    margin: -85px 10px 0;
+}
+
+span.lv {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+article {
+    margin: 15px 0;
+    padding: 1px 17px;
+    border-bottom: 3px rgba(52, 0, 23, .7) solid;
+    z-index: 9100;
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+    background: rgba(0,0,0,.9);
+}
+
+article h2 {
+    color: rgb(250,250,250);
+    text-align: center;
+    font-size: 25pt;
+}
+
+article h5 {
+    color: rgb(250,250,250);
+    float: right;
+}
+
+article h6 {
+    color: rgb(160,160,180);
+    font-size: 10pt;
+    margin-top: 0;
+}
+
+h6 a {
+    color: rgb(128,128,255);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Blogger Sans Medium", sans-serif;
+    color: rgb(0,0,36);
+}
+
+header#cabecalho {
+    padding: 50px 20px 0 20px;
+    margin: auto -15px 0 -15px ;
+    box-shadow: 0 0 20px rgba(20,0,0,.5);
+    height: 200px;
+    font-family: 'Electr', sans-serif;
+    border-bottom: 3px rgba(52, 0, 23, .7) solid;
+    z-index: 9150;
+ }
+
+.titprincipal {
+    font-family: Electr, sans-serif;
+    font-size: 27pt;
+    color: rgb(250,250,250);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    -webkit-animation: enterRightBounce 1s linear;
+    -moz-animation: enterRightBounce 1s linear;
+    -o-animation: enterRightBounce 1s linear;
+    animation: enterRightBounce 1s linear;
+}
+
+#titprincipal {
+    font-family: Electr, sans-serif;
+    font-size: 20pt;
+    color: rgb(250,250,250);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+}
+
+li#litit {
+    background: rgba(255,255,255,.7);
+}
+
+.titprincp {
+    font-family: Electr, sans-serif;
+    font-size: 17pt;
+    color: rgb(250,250,250);
+    text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}
+
+.titsecundario {
+    /*font-family: Electr, sans-serif;*/
+    font-family: "Bitter", sans-serif;
+    font-weight: bold;
+    font-size: 13pt;
+    color: rgb(250,250,250);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    width: 75%;
+}
+
+p {
+    font-family: "Roboto", "Bitter", sans-serif;
+    font-size: 13pt;
+    text-align: justify;
+    text-indent: 50px;
+    color: rgb(250,250,250);
+}
+
+p#ident2 {
+    text-indent: 100px;
+}
+
+p#ident3 {
+    text-indent: 150px;
+}
+
+a:not(.lia) {
+    text-decoration: none;
+    color: rgb(10,10,36);
+}
+
+a:hover:not(.lia) {
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+    color: rgba(0,170,255,.7);
+}
+
+a:visited:not(.lia) {
+    color: rgb(30,30,108);
+}
+
+a:active:not(.lia) {
+    color: rgb(255,255,255);
+    text-shadow: 0 0 15px rgba(255,255,255,1);
+}
+
+iframe {
+    border-bottom: 3px solid rgba( 252, 0, 23, .7);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,.5);
+    margin-top: -18px;
+    width: 100%;
+    height: 650px;
+}
+/* Fotos */
+
+ul#alb-fotos{
+    overflow: hidden;
+    list-style: none;
+    width: 100%;
+}
+
+ul#alb-fotos li, img#albfot {
+    -webkit-transition: all .8s ease-in;
+    -moz-transition: all .8s ease-in;
+    -o-transition: all .8s ease-in;
+    transition: all .8s ease-in;
+    background-size: cover;
+    border-bottom: 3px rgba(0,50,0,.8) solid;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+ul#alb-fotos li {
+    display: inline-block;
+    margin: 10px;
+}
+
+ul#alb-fotos li:hover, img#albfot:hover {
+    border-bottom: 3px rgba(200,255,200,.8) solid;
+}
+
+ul#alb-fotos li:hover {
+    cursor: pointer;
+}
+
+img#albfot {
+    width: 1056px;
+    height: 594px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -528px;
+    margin-top: -270px;
+    display: none;
+}
+
+img#albfot:hover {
+    cursor: zoom-out;
+}
+
+li#foto01 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a1.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto02 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a2.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto03 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a3.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto04 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a4.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto05 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a5.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto06 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a6.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto07 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a7.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto08 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a8.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto09 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a9.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto10 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a10.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto11 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a11.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto12 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a12.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto13 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a13.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto14 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a14.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto15 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a15.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto16 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a16.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto17 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a17.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto18 {
+    background: url('../../_imagens/Eduarda_Larissa/_/a18.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto19 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f00.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto20 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f1.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto21 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f2.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto22 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f3.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto23 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f4.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto24 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f5.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto25 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f6.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto26 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f7.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto27 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f8.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto28 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f9.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto29 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f10.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto30 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f11.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto31 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f12.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto32 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f13.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto33 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f14.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto34 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f15.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto35 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f16.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto36 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f17.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto37 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f18.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto38 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f19.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto39 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f20.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto40 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f21.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto41 {
+    background: url('../../_imagens/Eduarda_Larissa/_/f22.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto42 {
+    background: url('../../_imagens/Eduarda_Larissa/_/g1.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto43 {
+    background: url('../../_imagens/Eduarda_Larissa/_/g2.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto44 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s00.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto45 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s1.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto46 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s2.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto47 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s3.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto48 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s4.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto49 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s5.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto50 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s6.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto51 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s7.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto52 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s8.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto53 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s9.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto54 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s10.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto55 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s11.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto56 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s12.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+li#foto57 {
+    background: url('../../_imagens/Eduarda_Larissa/_/s13.jpg') no-repeat;
+    width: 320px;
+    height: 180px;
+}
+
+/* Contato */
+
+input, textarea, button {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border:1px solid rgba(0,170,255,.7);
+    margin: 0;
+    padding: 5px;
+    width: 98%;
+    font-family: Arial, sans-serif;
+}
+
+table#cont td {
+    padding: 2px;
+    border: none;
+}
+
+table#cont label {
+    float: right;
+    margin-right: 5px;
+    margin-left: -60px;
+}
+
+/* TABELA */
+
+section.table {
+    margin: 15px 0;
+    border-bottom: 3px solid rgba( 252, 0, 23, .7);
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+    background: rgba(240,240,255,.3);
+}
+
+table {
+    font-family: "Bitter", "Roboto", sans-serif;
+    width: 100%;
+    border-spacing: 0;
+}
+
+table.norm {
+    border: solid green 1px;
+}
+
+table.norm td {
+    border: 1px rgba(0, 252, 32, .5) solid;
+    background-color: rgba(250, 250, 250, 0.3);
+}
+
+table h2 {
+    font-size: 25pt;
+    color: rgb(0,25,0);
+}
+
+table caption span#md {
+    display: block;
+    float: right;
+    margin-top: 10px;
+    font-size: 9pt;
+    color: #343838;
+    text-shadow: 1px 1px 3px rgba(0,0,255,.5);
+}
+
+table caption {
+    background-color: rgba(0, 252, 23, .9);
+    box-shadow: 0 0 3px rgba(0, 252, 23, .4);
+    padding: 10px;
+}
+
+table td {
+    /* border: 1px rgba(0, 252, 32, .5) solid;*/
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table td#jf, table td#nm {
+    background-color: rgba( 252, 252, 252, .7);
+    border-bottom: 1px solid;
+}
+
+table td#jf:hover, table td#nm:hover {
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+    background-color: rgba(250, 250, 250, 0.5);
+    cursor: pointer;
+}
+
+table td div#nao_marcadas, table td div#ja_feitas {
+    display: none;
+}
+
+table#semanal td{
+    cursor: pointer;
+    border-left: 1px rgba(0, 200, 0, 0.9) solid;
+    border-right: 1px rgba(0, 200, 0, .9) solid;
+    border-top: 1px rgba(0, 200, 0, .3) solid;
+}
+
+table#click td{
+    cursor: pointer;
+}
+
+#intv {
+    background-color: rgba( 252, 252, 252, .7);
+}
+
+table#conts td{
+    border: 1px rgba(0, 252, 32, .5) solid;
+}
+
+table td#h {
+    background-color: rgba(0, 252, 32, .7);
+    color: rgb(250,250,255);
+}
+
+table td#s {
+    background-color: rgba(0, 252, 32, .7);
+    color: rgb(250,250,255);
+    width: 150px;
+}
+
+table td#alg, #intl, #infb, #dest, #mat, #fis, #qui, #bio, #geo, #hist, #fil, #soc, #port, #art, #ef {
+    color: rgb(0, 50, 0);
+    font-family: Prototype, sans-serif;
+    font-size: 14pt;
+}
+
+/* Exatas */
+
+table td#mat, #fis, #qui, #bio {
+    background-color: rgba(0, 252, 255, 0.5);
+}
+
+/* Humanas */
+
+table td#geo, #hist, #fil, #soc {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+/* Linguagens e Códigos */
+
+table td#port, #art, #ef {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* Técnicas */
+
+table td#alg, #intl, #infb, #dest {
+   /* background-color: rgba(0, 255, 0, 0.5); */
+    background-color: rgba(44, 119, 255, 0.5);
+}
+
+span#prf {
+    position: relative;
+    margin-top: -100px;
+    font-size: 12pt;
+    z-index: 100;
+}
+
+/* -----  */
+
+table td.ce {
+    background-color: rgba(0, 252, 32, .7);
+    color: rgb(250,250,255);
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+table td.ce:hover {
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+    background-color: rgba(255,255,255, .7);
+    color: rgba(0, 200, 23, .7);
+    text-shadow: 0 0 25px rgba(0, 252, 23, .9);
+}
+
+table td.ce a {
+    color: rgb(255,255,255);
+    text-shadow: 0 0 25px rgb(255,255,255);
+}
+
+table td.ce a:hover {
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+    color: rgba(0, 200, 23, .7);
+    text-shadow: 0 0 25px rgba(0, 252, 23, .7);
+}
+
+/* FIM TABELA */
+
+footer {
+    clear: both;
+    padding: 2px 2px 2px 2px;
+    margin-top: 2px;
+    box-shadow: inset 0 0 10px rgba(20,0,0,.5);
+}
+
+footer a#seta {
+    color: rgb(250,250,250);
+    cursor: text;
+}
+
+footer p {
+    text-align: center;
+    text-indent: 0;
+}
+
+#footer {
+    margin-top: -4px;
+}
+
+#footer #ant, #pro{
+    font-size: larger;
+    padding: 3px 10px ;
+    background-color: rgba(0, 190, 23, .7);
+}
+
+#footer #ant {
+    float: left;
+}
+
+#footer #pro {
+    float: right;
+}

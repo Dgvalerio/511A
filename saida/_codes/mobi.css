@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@font-face {
+    /* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+    font-family:"Blogger Sans Medium";
+    src:url("../../_fontes/blogger_sans_medium/BloggerSans-Medium.eot?") format("eot"),
+        url("../../_fontes/blogger_sans_medium/BloggerSans-Medium.woff") format("woff"),
+        url("../../_fontes/blogger_sans_medium/BloggerSans-Medium.ttf") format("truetype"),
+        url("../../_fontes/blogger_sans_medium/BloggerSans-Medium.svg#BloggerSans-Medium") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'Electr';
+    src: url(../../_fontes/electr.ttf);
+}
+
+@font-face {
+    font-family: 'Electri';
+    src: url(../../_fontes/electri.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: local("Roboto-Regular"), url(../../_fontes/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(../../_fontes/Roboto-Bold.ttf);
+}
+
+@media screen and (max-width: 1235px) {
+    nav ul {
+        margin-left: -30px;
+    }
+
+    nav ul li {
+        margin: 0 -2px;
+        padding: 15px;
+    }
+
+    nav li ul.menu-sec {
+        margin-left: -110px;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    nav ul {
+        margin-left: -30px;
+    }
+
+    nav ul li {
+        margin: 0 -2px;
+        padding: 15px;
+    }
+
+    nav li ul.menu-sec {
+        margin-left: -110px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav#menu-prin {
+        display: none;
+    }
+
+    nav#menu-lat {
+        display: block;
+        left: 0;
+        width: 100%;
+    }
+
+    header#cabecalho {
+        height: 250px;
+    }
+
+    /* li#litit { position: absolute; width: 100%; left: 50px; } */
+
+    nav#menu-lat ul {
+        margin-left: -41px;
+        width: 100%;
+    }
+
+    nav#menu-lat ul li {
+        display: block;
+    }
+
+    div#interface {
+        margin: -95px 10px 0;
+        padding: 20px;
+    }
+
+    table#cont td.ce {
+        width: 100px;
+    }
+
+    article {
+        margin: 15px -15px;
+    }
+
+    footer {
+        margin: 2px -15px -15px;
+
+    }
+
+    li:hover > ul.menu-sec2 {
+        top: 49px;
+        -webkit-transition: .8s time;
+        -moz-transition: .8s time;
+        -o-transition: .8s time;
+        transition: .8s;
+        left: 41px;
+    }
+    /* header#cabecalho br#mob { display: none; } */
+}

@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+@keyframes animer {
+    0% {
+        transform: translate(0px, 0px);
+        border-radius: 100px;
+    }
+    5% {
+        transform: translate(0px, 22px);
+    }
+
+    30%{
+        border-radius: 100px;
+    }
+    35%{
+        border-radius: 3px;
+    }
+    100% {
+        transform: translate(0px, 22px);
+        border-radius: 3px;
+    }
+}
+
+@keyframes animer2 {
+    0% {
+        transform: translate(0px, 0px);
+        border-radius: 100px;
+    }
+    5% {
+        transform: translate(0px, 22px);
+    }
+    10% {
+        transform: translate(0px, 44px);
+    }
+
+    35%{
+        border-radius: 100px;
+    }
+    40%{
+        border-radius: 3px;
+    }
+    100% {
+        transform: translate(0px, 44px);
+        border-radius: 3px;
+    }
+}
+
+@keyframes animer3 {
+    0% {
+        transform: translate(0px, 0px);
+
+    }
+    5% {
+        transform: translate(0px, 22px);
+    }
+    10% {
+        transform: translate(0px, 44px);
+    }
+    15% {
+        transform: translate(0px, 66px);
+    }
+
+    40%{
+        border-radius: 100px;
+    }
+    45%{
+        border-radius: 3px;
+    }
+    100% {
+        transform: translate(0px, 66px);
+        border-radius: 3px;
+    }
+}
+
+/* - - - -  */
+
+@keyframes animer4 {
+    0% {
+        transform: translate(0px, 0px);
+        border-radius: 100px;
+    }
+    17%{
+        transform: translate(0px, 0px);
+    }
+    20% {
+        transform: translate(22px, 0px);
+    }
+
+    60%{
+        border-radius: 100px;
+    }
+    65%{
+        border-radius: 3px;
+    }
+    100% {
+        transform: translate(22px, 0px);
+        border-radius: 3px;
+    }
+}
+
+@keyframes animer5 {
+    0% {
+        transform: translate(0px, 0px);
+        border-radius: 100px;
+    }
+    5% {
+        transform: translate(0px, 22px);
+    }
+    17%{
+        transform: translate(0px, 22px);
+    }
+    20% {
+        transform: translate(22px, 22px);
+    }
+
+    55%{
+        border-radius: 100px;
+    }
+    60%{
+        border-radius: 3px;
+    }
+    100% {
+        transform: translate(22px, 22px);
+        border-radius: 3px;
+    }
+}
+
+@keyframes animer6 {
+    0% {
+        transform: translate(0px, 0px);
+        border-radius: 100px;
+    }
+    5% {
+        transform: translate(0px, 22px);
+    }
+    10% {
+        transform: translate(0px, 44px);
+    }
+    17%{
+        transform: translate(0px, 44px);
+    }
+    20% {
+        transform: translate(22px, 44px);
+    }
+
+    50%{
+        border-radius: 100px;
+    }
+    55%{
+        border-radius: 3px;
+    }
+    100% {
+        transform: translate(22px, 44px);
+        border-radius: 3px;
+    }
+}
+
+@keyframes animer7 {
+    0% {
+        transform: translate(0px, 0px);
+        border-radius: 100px;
+    }
+    5% {
+        transform: translate(0px, 22px);
+    }
+    10% {
+        transform: translate(0px, 44px);
+    }
+    15% {
+        transform: translate(0px, 66px);
+    }
+    17%{
+        transform: translate(0px, 66px);
+    }
+    20% {
+        transform: translate(22px, 66px);
+    }
+
+    45%{
+        border-radius: 100px;
+    }
+    50%{
+        border-radius: 3px;
+    }
+    100% {
+        transform: translate(22px, 66px);
+        border-radius: 3px;
+    }
+}
+
+/* - - - -  */
+
+
+@keyframes animer8 {
+    0% {
+        transform: translate(0px, 0px);
+        border-radius: 100px;
+    }
+    17%{
+        transform: translate(0px, 0px);
+    }
+    20% {
+        transform: translate(22px, 0px);
+    }
+    25% {
+        transform: translate(44px, 0px);
+    }
+
+    65%{
+        border-radius: 100px;
+    }
+    70%{
+        border-radius: 3px;
+    }
+    100% {
+        transform: translate(44px, 0px);
+        border-radius: 3px;
+    }
+}
+
+@keyframes animer9 {
+    0% {
+        transform: translate(0px, 0px);
+        border-radius: 100px;
+    }
+    5% {
+        transform: translate(0px, 22px);
+    }
+    10% {
+        transform: translate(0px, 44px);
+    }
+    17%{
+        transform: translate(0px, 44px);
+    }
+    20% {
+        transform: translate(22px, 44px);
+    }
+    25% {
+        transform: translate(44px, 44px);
+    }
+
+    70%{
+        border-radius: 100px;
+    }
+    75%{
+        border-radius: 3px;
+    }
+    100% {
+        transform: translate(44px, 44px);
+        border-radius: 3px;
+    }
+}
+
+@keyframes animer10 {
+    0% {
+        transform: translate(0px, 0px);
+        border-radius: 100px;
+    }
+
+    25%{transform: translate(0px, 0px) scale(1.0);}
+
+    27%{transform: translate(0px, 11px) scale(1.3);}
+
+    30%{transform: translate(0px, 22px) scale(1.0);}
+        33%{transform: translate(0px, 33px) scale(1.3);}
+    35%{transform: translate(0px, 44px) scale(1.0);}
+        37%{transform: translate(0px, 55px) scale(1.3);}
+    40%{transform: translate(0px, 66px) scale(1.0);}
+        43%{transform: translate(11px, 66px) scale(1.3);}
+    45%{transform: translate(22px, 66px) scale(1.0);}
+        47%{transform: translate(22px, 55px) scale(1.3);}
+    50%{transform: translate(22px, 44px) scale(1.0);}
+        53%{transform: translate(22px, 33px) scale(1.3);}
+    55%{transform: translate(22px, 22px) scale(1.0);}
+        57%{transform: translate(22px, 11px) scale(1.3);}
+    60%{transform: translate(22px, 0px) scale(1.0);}
+        63%{transform: translate(33px, 0px) scale(1.3);}
+    65%{transform: translate(44px, 0px) scale(1.0);}
+        67%{transform: translate(44px, 22px) scale(1.3);}
+    70%{transform: translate(44px, 44px) scale(1.0);}
+
+
+    75%{transform: translate(0px, 0px);}
+    100% {
+        transform: translate(0px, 0px);
+        border-radius: 100px;
+    }
+}
+
+/* - - - -  */
+
+.qua, .cir {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: -50px;
+    float: right;
+    top: 25px;
+
+    margin-left: -50px;
+    animation-duration: 10s;
+    animation: 15s infinite;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.qua {
+    background: rgba(144, 199, 75, 0.9);
+}
+
+.cir {
+    background: rgba(237, 51, 56, 0.9);
+}
+
+#animer1 {
+    animation-name: animer;
+}
+
+#animer2 {
+    animation-name: animer2;
+}
+
+#animer3 {
+    animation-name: animer3;
+}
+
+#animer4 {
+    animation-name: animer4;
+}
+
+#animer5 {
+    animation-name: animer5;
+}
+
+#animer6 {
+    animation-name: animer6;
+}
+
+#animer7 {
+    animation-name: animer7;
+}
+
+#animer8 {
+    animation-name: animer8;
+}
+
+#animer9 {
+    animation-name: animer9;
+}
+
+#animer10 {
+    animation-name: animer10;
+}

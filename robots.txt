@@ -1,0 +1,6 @@
+User-agent:*
+Disallow: /2016/
+Disallow: /0-0/
+Disallow: /saida/
+Allow: /*
+Sitemap: http://www.ifortecs.pe.hu/sitemap.xml
